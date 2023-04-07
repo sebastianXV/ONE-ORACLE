@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora IMC</title>
+
+    <h1>Calcular IMC</h1>
+
+    <script>
+
+        function saltarLinea() {
+            document.write("<br><br>");
+        }
+
+        function calcularIMC(peso, altura) {
+
+            return (peso / (altura*altura)); // dejo de usar 'let' para una función porque solo se usa ahí
+            
+        }
+
+        var nombre = prompt("Cual es su nombre?");
+        var peso = prompt(nombre + ", informe su peso: ");
+        var altura = prompt(nombre + ", informe su altura: ");
+
+        document.write("El IMC calculado para el usuario " + nombre + " es de: " + calcularIMC(peso, altura));
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+</html>

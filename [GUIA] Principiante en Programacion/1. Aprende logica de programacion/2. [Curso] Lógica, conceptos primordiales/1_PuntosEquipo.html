@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluladora de puntos equipo</title>
+    
+    <script>
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+
+        }
+
+        function calculoEquipo(puntosTotal) {
+
+            if (puntosTotal > 30) {
+
+                valoracion = "esta mejor";
+
+            }
+
+            if (puntosTotal < 30) {
+
+                valoracion = "esta peor";
+
+            }
+
+            if (puntosTotal == 30) {
+
+                valoracion = "esta igual";
+            }
+
+            return valoracion
+        }
+
+        var victorias = parseInt(prompt("Cantidad de victorias del equipo"));
+        var empates = parseInt(prompt("Cantidad de empates del equipo"));
+        var puntosTotal = (victorias * 3) + empates;
+
+        imprimir("El total de puntos del equipo es: " + puntosTotal);
+
+        calculoEquipo(puntosTotal);
+
+        imprimir(valoracion)
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

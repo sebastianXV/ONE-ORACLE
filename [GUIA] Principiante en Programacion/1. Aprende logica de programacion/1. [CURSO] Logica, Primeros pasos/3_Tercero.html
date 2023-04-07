@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sumar edades V2</title>
+
+    <script>
+
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+            saltarLinea();
+        }
+
+        imprimir("Hola amigos");
+
+
+        var anio = 2025;
+        var saltoDeLinea = "<br><br>";
+
+        document.write("Juan tiene: " + (anio - 2000) + "años");
+        saltarLinea();
+        document.write("Pedro tiene: " + (anio - 1995) + "años");
+
+        anio = 2030
+
+        saltarLinea(); // en vez de 'document.write(saltoDeLinea);'
+        document.write("Carlos tiene: " + (anio - 2005) + "años");
+
+    </script>
+    
+</head>
+
+<body>
+ 
+</body >
+
+</html >
