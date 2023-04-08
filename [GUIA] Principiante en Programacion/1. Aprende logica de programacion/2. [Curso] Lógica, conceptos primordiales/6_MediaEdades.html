@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Edades</title>
+
+    <h1>Programa Calular la media de las Edades</h1>
+
+    <script>
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+
+        }
+
+        var numeroMiembros = parseInt(prompt("ingrese la cantidad de miembros"));
+        var i = 1;
+        var totalEdades = 0;
+
+        while (i <= numeroMiembros){
+
+            edad = parseInt(prompt("Digite la Edad"));
+            totalEdades = totalEdades + edad;
+
+            i++;
+
+        }
+
+        var promedio = totalEdades/numeroMiembros;
+
+        imprimir("El promedio de las edades es: " + promedio);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

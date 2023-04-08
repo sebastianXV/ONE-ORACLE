@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+
+    <h1>Programa Calular la tabla de Multiplicar</h1>
+
+    <script>
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+
+        }
+
+        var multiplicador = 0;
+        var multiplicando = parseInt(prompt("Digite el numero que desea multiplicar"));
+
+        imprimir("WHILE")
+
+        while(multiplicador <= 10){
+        
+            imprimir(multiplicando * multiplicador);
+
+            multiplicador++;
+
+        }
+
+        imprimir("FOR")
+
+        for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+
+            imprimir(multiplicando * multiplicador);
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
