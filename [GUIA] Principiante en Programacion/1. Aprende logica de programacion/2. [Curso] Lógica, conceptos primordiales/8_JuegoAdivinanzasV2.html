@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Adivinanzas</title>
+
+    <h1>Programa Adivinar Numero</h1>
+
+    <script>
+
+        function saltarLinea() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+
+        }
+
+
+        var numeroPensado = Math.round(Math.random() * 10);
+        var intentos = 3;
+        var i = 1;
+
+
+        while (i <= intentos) {
+
+            var numeroUsuario = parseInt(prompt("Ingresa un numero ente 0-10"));
+
+            if (numeroPensado == numeroUsuario) {
+
+                alert("Usted acerto, en el intento " + i + " el numero pensado era " + numeroPensado);
+                break;
+
+            }
+
+            else {
+
+                alert("No acerto");
+
+            }
+
+            i++;
+
+        }
+
+        if (numeroPensado == numeroUsuario) {
+
+            imprimir("Usted acerto, en el intento " + i + " el numero pensado era " + numeroPensado);
+
+        }
+
+        else {
+
+            imprimir("No acerto, el numero pensado era " + numeroPensado);
+
+        }
+
+        imprimir("fin");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
