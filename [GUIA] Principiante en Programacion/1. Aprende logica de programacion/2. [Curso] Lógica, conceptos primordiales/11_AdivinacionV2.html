@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+
+    <h1>Escribe el numero secreto</h1>
+
+    <input />
+    <button>Verificar si acerto</button>
+
+    <script>
+
+        //var secreto = Math.round(Math.random())*10;
+
+        var secretos = [3, 5, 7, 9];
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verificar() {
+
+            var encontrado = false;
+
+            for (var posicion = 0; posicion < secretos.length; posicion++) {
+
+                if (parseInt(input.value) == secretos[posicion]) {
+
+                    alert("usted acerto");
+                    encontrado = true;
+                    break;
+
+                }
+
+            }
+
+            if (encontrado == false) {
+
+                alert("No acerto")
+
+            }
+
+            input.value = "";
+            input.focus();
+
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = verificar;
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
