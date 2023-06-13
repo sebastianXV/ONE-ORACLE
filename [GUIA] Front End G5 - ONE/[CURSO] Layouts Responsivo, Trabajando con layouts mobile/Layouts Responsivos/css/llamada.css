@@ -2,22 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     color: #FFFFFF;
-    text-align: center;
-    
+    text-align: center; 
     background-color: #00161C;
-
     padding-top: 12.25rem;
     padding-bottom: 2.5rem;
 }
 
 .llamada__titulo {
-    font-family: 'Montserrat', serif;
+    font-family: var(--monserrat);
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-
     margin-bottom: 1.5rem;
 }
 
