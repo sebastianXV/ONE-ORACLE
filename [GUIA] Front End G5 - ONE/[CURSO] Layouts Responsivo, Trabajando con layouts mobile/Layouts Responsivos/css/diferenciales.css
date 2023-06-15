@@ -29,24 +29,25 @@
     line-height: normal;
 }
 
-.diferenciales__item-reloj{
+.diferenciales__item-reloj {
     background-image: url(../img/icono-reloj.png);
-    
+
 }
 
-.diferenciales__item-dinero{
+.diferenciales__item-dinero {
     background-image: url(../img/icono-dinero.png);
 }
 
-.diferenciales__item-quimica{
+.diferenciales__item-quimica {
     background-image: url(../img/icono-quimica.png);
 }
 
 
 @media screen and (min-width: 1024px) {
     .diferenciales {
-        background-color: var(--cinza-claro);
+        background-color: var(--background-ceniza-claro);
     }
+
     .diferenciales__lista {
         justify-content: space-around;
     }
