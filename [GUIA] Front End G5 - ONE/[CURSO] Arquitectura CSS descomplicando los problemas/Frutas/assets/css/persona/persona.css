@@ -1,6 +1,6 @@
 .persona{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
 }
 
 @media screen and (min-width:0){
