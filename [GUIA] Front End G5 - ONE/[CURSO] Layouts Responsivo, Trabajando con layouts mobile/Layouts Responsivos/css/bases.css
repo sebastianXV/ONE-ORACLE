@@ -41,6 +41,13 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--boton-rojo);
     border-radius: 5px;
+    
+}
+
+.boton:hover{
+    transition: 1s;
+    background: #bab6b6;
+    color: black;
 }
 
 @media screen and (min-width: 1024px) {
