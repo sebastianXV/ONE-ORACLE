@@ -1,0 +1,31 @@
+{
+  "perfil": [
+    {
+      "nombre": "Sebastian",
+      "email": "juan.rojass@est.iudigital.edu.co",
+      "id": "1"
+    },
+    {
+      "nombre": "Andres",
+      "email": "sebastian111634420@gmail.com",
+      "id": "92068837-13f9-4a18-acb0-34d6bb533fae"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
