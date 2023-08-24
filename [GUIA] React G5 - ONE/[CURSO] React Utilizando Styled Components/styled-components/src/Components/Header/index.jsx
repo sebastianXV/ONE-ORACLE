@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "styled-components";
+import styled  from "styled-components";
 import logo from "../../assets/images/logo.svg";
 import { colorPrimario } from "../UI/variables";
 
@@ -24,7 +24,7 @@ const BtnHeader = styled.a`
   font-weight: 600;
   border: 2px solid white;
   color: ${ ({primary}) => primary ? `white` : colorPrimario };
-  background: ${({primary}) => primary ? "transparent" : "white"}
+  background: ${ (props) => props.primary ? "transparent" : "white"}
 `
 
 const Header = () => {
